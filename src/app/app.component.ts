@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   standalone: true,
+  imports: [ HomeComponent ], 
   selector: 'app-root',
-  template: `<h1>Hello World!</h1>`,
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'homes';
-}
+
+export class AppComponent {}
